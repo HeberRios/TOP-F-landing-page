@@ -1,3 +1,11 @@
+:root {
+    /* COLORS */
+    --DarkBGC: #1f2937;
+    --QuoteSectionBGC: #e5e7eb;
+    --WhiteText: #f9faf8;
+    --CallToActionBGC: #3882f6;
+}
+
 /* CSS RESET */
 * {
     margin: 0;
@@ -5,12 +13,8 @@
     box-sizing: border-box;
 }
 
-:root {
-    /* COLORS */
-    --DarkBGC: #1f2937;
-    --QuoteSectionBGC: #e5e7eb;
-    --WhiteText: #f9faf8;
-    --CallToActionBGC: #3882f6;
+html {
+    font-size: 62.5%;
 }
 
 /* roboto-300italic - latin */
@@ -22,6 +26,15 @@
     src: url("../fonts/roboto-v30-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* roboto-900 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -30,3 +43,118 @@
     font-weight: 900;
     src: url("../fonts/roboto-v30-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* GENERAL STYLING ------------------------------------------------------- */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--WhiteText);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    border-radius: 0.75rem;
+    background-color: var(--CallToActionBGC);
+    color: var(--WhiteText);
+}
+
+/* HEADER SECTION -------------------------------------------------------- */
+
+.header {
+    height: 8rem;
+    display: flex;
+    padding: 0 6.4rem;
+    justify-content: center;
+    background-color: var(--DarkBGC);
+}
+
+.header-nav {
+    max-width: 130rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: inherit;
+}
+
+.nav-header-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    color: var(--QuoteSectionBGC);
+}
+
+/* HERO SECTION ---------------------------------------------------------- */
+
+.hero-section {
+    background-color: var(--DarkBGC);
+    padding: 12.8rem 6.4rem;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2rem;
+}
+
+.text-box,
+.image-box {
+    width: 50%;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+.hero-paragraph {
+    font-size: 1.4rem;
+    color: var(--QuoteSectionBGC);
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    align-self: flex-start;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f747d;
+}
+
+.hero-img {
+    font-size: 1.4rem;
+}
+
+/* --FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
