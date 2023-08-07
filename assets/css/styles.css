@@ -203,6 +203,28 @@ h1 {
     color: #6f747d;
 }
 
+/* QUOTE SECTION --------------------------------------------------------- */
+
+.quote-section {
+    padding: 4.8rem 6.4rem 8rem 6.4rem;
+    background-color: var(--QuoteSectionBGC);
+    color: var(--DarkBGC);
+}
+
+.quote blockquote {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.quote figcaption {
+    font-size: 2.4rem;
+    text-align: right;
+    font-weight: 900;
+}
+cite {
+    font-style: normal;
+}
+
 /* --FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
