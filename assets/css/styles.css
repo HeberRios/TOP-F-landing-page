@@ -160,7 +160,7 @@ h1 {
 
 /* RANDOM INFORMATION SECTION -------------------------------------------- */
 .random-info-section {
-    padding: 4.8rem 6.4rem 8rem 6.4rem;
+    padding: 4.8rem 6.4rem 12.8rem 6.4rem;
     color: var(--DarkBGC);
 }
 
@@ -206,7 +206,7 @@ h1 {
 /* QUOTE SECTION --------------------------------------------------------- */
 
 .quote-section {
-    padding: 4.8rem 6.4rem 8rem 6.4rem;
+    padding: 12.8rem 6.4rem 12.8rem 6.4rem;
     background-color: var(--QuoteSectionBGC);
     color: var(--DarkBGC);
 }
@@ -225,6 +225,38 @@ cite {
     font-style: normal;
 }
 
+/* CTA SECTION ----------------------------------------------------------- */
+.cta-section {
+    padding: 12.8rem 6.4rem 12.8rem 6.4rem;
+}
+
+.cta-section .container {
+    max-width: 130rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 11rem;
+    background-color: var(--CallToActionBGC);
+    border-radius: 1rem;
+}
+
+.cta-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.cta-paragraph {
+    font-size: 2.4rem;
+}
+
+.bottom-cta {
+    font-size: 1.8rem;
+    font-weight: 900;
+    border: 3px solid var(--WhiteText);
+    padding: 1rem 4rem;
+    align-self: flex-end;
+}
 /* --FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
